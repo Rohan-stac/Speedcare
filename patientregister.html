@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="././favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="background-image">
+        <div class="navbar">
+            <img src="./images/create_a_logo_called_speedcare_health_care.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservation.html">Reservation consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            
+          
+        </div>
+        <div class="registration-container">
+            <form class="registration-form" action="submit_registration.php" method="POST">
+                <h2>Patient Registration Form</h2>
+                
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+    
+                <label for="medical-history">Medical History:</label>
+                <textarea id="medical-history" name="medical_history" rows="4" required></textarea>
+    
+                <button type="submit">Register</button>
+            </form>
+    
+            <div class="image-container">
+                <img src="./images/patients.webp" alt="Healthcare Image"> 
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Info</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Compressons</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Customer Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h2>Newsletter</h2>
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <input type="email" placeholder="Your email" aria-label="Your email">
+                    <button>Subscribe</button>
+                    <div class="social-media">
+                        <a href="#"><img src="./images/insta (1).png" alt="Instagram Logo" class="social-logo"></a>
+                        <a href="#"><img src="./images/fb.png" alt="Facebook Logo" class="social-logo"></a>
+                        <a href="#"><img src="./images/twit.png" alt="Twitter Logo" class="social-logo"></a>
+                        <a href="#"><img src="./images/YOUTUBE.jpg" alt="YouTube Logo" class="social-logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+</body>
+</html>

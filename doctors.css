@@ -1,0 +1,89 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-image: url(./images/bgdoc1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #333;
+  }
+  .doctor-details {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(188, 217, 247);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(19, 19, 19, 0.1);
+  }
+  .doctor-details img {
+    width: 100%;
+    border-radius: 10px;
+  }
+ /*mobile version*/
+ @media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .doctor-details {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .doctor-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .branch-description {
+    font-size: 16px;
+  }
+
+  .branch-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .services-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  h1, h2, h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .newsletter {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .newsletter input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .newsletter button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .newsletter button:hover {
+    background-color: #0056b3;
+  }
+}
+
+
+
+
+
