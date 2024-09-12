@@ -362,14 +362,14 @@ h1 {
 }
 
 .branch1 {
-    background-image: url(../images/b1.png);
+    background-image: url("../images/b1.png");
 }
 
 .branch2 {
-    background-image: url(../images/b2.jpg);
+    background-image: url("../images/b2.jpg");
 }
 .branch3 {
-  background-image: url(../images/nuwara.jpg);
+  background-image: url("../images/nuwara.jpg");
 }
 
 .branches h2, .branches h4, .branches p {
@@ -396,6 +396,11 @@ h1 {
     transform: scale(1.03);
     transition: all 1s ease;
     border: 2px solid var(--purewhite);
+}
+.map-container{
+  margin-top: 100px;
+  border-radius: 30px;
+  border-color: #000;
 }
 
 .Summary{
@@ -1139,5 +1144,8 @@ body {
   margin-top: 10px;
   max-width: 195%;
   
+}
+.services-table{
+  margin-top: 600px;
 }
 }
