@@ -11,10 +11,11 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="background-image">
-        <div class="navbar">
+        <div class="navbar" id="myNavbar">
             <img src="./images/create_a_logo_called_speedcare_health_care.png" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,6 +25,9 @@
                 <li><a href="reservation.html">Reservation consulting</a></li>
                 <li><a href="pharmacy.html">Pharmacy</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
+                <a href="javascript:void(0);" class="icon" id="hamburger-icon">
+                    &#9776; <!-- Hamburger icon -->
+                </a>
             </ul>
             
           
@@ -186,6 +190,7 @@
                 </div>
             </div>
         </footer>
+        <script src="navbar.js"></script> <!-- Link to the JavaScript file -->
 
 </body>
 </html>
