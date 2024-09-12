@@ -362,14 +362,14 @@ h1 {
 }
 
 .branch1 {
-    background-image: url("../images/b1.png");
+    background-image: url("images/b1.png");
 }
 
 .branch2 {
-    background-image: url("../images/b2.jpg");
+    background-image: url("images/b2.jpg");
 }
 .branch3 {
-  background-image: url("../images/nuwara.jpg");
+  background-image: url("images/nuwara.jpg");
 }
 
 .branches h2, .branches h4, .branches p {
