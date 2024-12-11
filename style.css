@@ -812,7 +812,7 @@ body {
 .booking-form button {
   width: 100%;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #3cddb5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -916,10 +916,156 @@ body {
   border-radius: 10px;
 }
 
+
+/*PHARMACY MAIN PRODUCT PAGE*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  
+}
+h1{
+  text-align: left;
+} 
+
+h2 {
+  text-align: center;
+
+}
+.category {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(189, 228, 244, 0.8); /* Adjust the last value (0.8) for transparen*/
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  
+}
+.item {
+  background-color: #aadef3;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(92, 165, 233, 0.2);
+}
+.item img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 4px;
+}
+.price {
+  color: #28a745;
+  font-weight: bold;
+}
+input[type="number"] {
+  width: 50px;
+  margin: 5px;
+}
+button {
+  background-color: #178f8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #17d6ba;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+th, td {
+  border: 3px solid #000509;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #64a6ed;
+  color: rgb(8, 2, 2);
+}
+#total {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+.medicine-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+}
+
+/*ORDER CONFIRM PAGE*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+button {
+  background-color: #2ba9c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.order-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(209, 241, 247);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+
 /*mobile version*/
 
 
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 320px)  {
   * {
     margin: 0;
     padding: 0;
@@ -1164,4 +1310,41 @@ body {
 .services-table{
   margin-top: 600px;
 }
+
+
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  }
+
+  .item img {
+    max-width: 70%; /* Increase image size for better visibility */
+  }
+
+  input[type="number"] {
+    width: 30px; /* Smaller input for mobile */
+  }
+
+  button {
+    padding: 5px; /* Adjust button padding */
+  }
+
+  th, td {
+    font-size: 14px; /* Smaller font size for table on mobile */
+  }
+
+  #total {
+    font-size: 16px; /* Adjust total font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Adjust title size for small screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust subtitle size for small screens */
+  }
 }

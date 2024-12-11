@@ -14,6 +14,7 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+
     <div class="background-image" id="myNavbar">
         <div class="navbar">
             <img src="./images/create_a_logo_called_speedcare_health_care.png" class="logo">
@@ -32,71 +33,332 @@
 
            
         </div>
-        <div class="content">
-            <form class="purchase-form" action="submit_purchase.php" method="POST">
-                <h2>Medicine Purchase Form</h2>
-                <label for="medicine">Select Medicine:</label>
-                <select id="medicine" name="medicine" required>
-                    <option value="">--Select Medicine--</option>
-                    <option value="paracetamol">Paracetamol</option>
-                    <option value="amoxicillin">Amoxicillin</option>
-                    <option value="metformin">Metformin</option>
-                </select>
-    
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" required>
-    
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-    
-                <button type="submit">Purchase Medicine</button>
-            </form>
+
+    <h1>Medicine Products</h1>
+
+    <!-- Analgesics Section -->
+    <div class="category">
+        <h2>Analgesics</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="./images/Paracetamol.jpg" alt="Paracetamol" class="medicine-image">
+                <div>Paracetamol</div>
+                <span class="price">Rs.50</span><br>
+                <input type="number" min="1" value="1" id="qty-Paracetamol">
+                <button onclick="addItem('Paracetamol', 50)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Ibuprofen.avif" alt="Ibuprofen" class="medicine-image">
+                <div>Ibuprofen</div>
+                <span class="price">Rs.70</span><br>
+                <input type="number" min="1" value="1" id="qty-Ibuprofen">
+                <button onclick="addItem('Ibuprofen', 70)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Aspirin.jpg" alt="Aspirin" class="medicine-image">
+                <div>Aspirin</div>
+                <span class="price">Rs.30</span><br><br>
+                <input type="number" min="1" value="1" id="qty-Aspirin">
+                <br><br><br>
+                <button onclick="addItem('Aspirin', 30)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Naproxen.webp" alt="Naproxen" class="medicine-image">
+                <div>Naproxen</div>
+                <span class="price">Rs.90</span><br>
+                <input type="number" min="1" value="1" id="qty-Naproxen">
+                <button onclick="addItem('Naproxen', 90)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Diclofenac.avif" alt="Diclofenac" class="medicine-image">
+                <div>Diclofenac</div>
+                <span class="price">Rs.120</span><br>
+                <input type="number" min="1" value="1" id="qty-Diclofenac">
+                <button onclick="addItem('Diclofenac', 120)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Acetaminophen.webp" alt="Acetaminophen" class="medicine-image">
+                <div>Acetaminophen</div>
+                <span class="price">Rs.60</span><br>
+                <input type="number" min="1" value="1" id="qty-Acetaminophen">
+                <button onclick="addItem('Acetaminophen', 60)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Diclofenac.avif"  alt="Morphine" class="medicine-image">
+                <div>Morphine</div><br>
+                <span class="price">Rs.60</span>
+                <input type="number" min="1" value="1" id="qty-Morphine">
+                <button onclick="addItem('Morphine', 60)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Hydrochlorothiazide.webp"alt="Ketorolac" class="medicine-image">
+                <div>Ketorolac</div>
+                <span class="price">Rs.60</span><br>
+                <input type="number" min="1" value="1" id="qty-Ketorolac">
+                <button onclick="addItem('Ketorolac', 60)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Tramadol.jpeg" alt="Tramadol" class="medicine-image">
+                <div>Tramadol</div>
+                <span class="price">Rs.60</span><br>
+                <input type="number" min="1" value="1" id="qty-Tramadol">
+                <button onclick="addItem('Tramadol', 60)">Add</button>
+            </div>
+            
         </div>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h2>Info</h2>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Compressons</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Collection</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h2>Legal</h2>
-                    <ul>
-                        <li><a href="#">Customer Agreement</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">GDPR</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Media Kit</a></li>
-                    </ul>
-                </div>
-        
-                <div class="footer-section">
-                    <h2>Newsletter</h2>
-                    <p>Subscribe to our newsletter for updates.</p>
-                    <input type="email" placeholder="Your email" aria-label="Your email">
-                    <button>Subscribe</button>
-                    <div class="social-media">
-                        <a href="#"><img src="./images/insta (1).png" alt="Instagram Logo" class="social-logo"></a>
-                        <a href="#"><img src="./images/fb.png" alt="Facebook Logo" class="social-logo"></a>
-                        <a href="#"><img src="./images/twit.png" alt="Twitter Logo" class="social-logo"></a>
-                        <a href="#"><img src="./images/YOUTUBE.jpg" alt="YouTube Logo" class="social-logo"></a>
-                    </div>
+    </div>
+
+    <!-- Antibiotics Section -->
+    <div class="category">
+        <h2>Antibiotics</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="./images/Amoxicillin.png" alt="Amoxicillin" class="medicine-image">
+                <div>Amoxicillin</div>
+                <span class="price">Rs.150</span><br>
+                <input type="number" min="1" value="1" id="qty-Amoxicillin">
+                <button onclick="addItem('Amoxicillin', 150)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Ciprofloxacin.png" alt="Ciprofloxacin" class="medicine-image">
+                <div>Ciprofloxacin</div>
+                <span class="price">Rs.200</span><br>
+                <input type="number" min="1" value="1" id="qty-Ciprofloxacin">
+                <button onclick="addItem('Ciprofloxacin', 200)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Naproxen.webp" alt="Azithromycin" class="medicine-image">
+                <div>Azithromycin</div>
+                <span class="price">Rs.180</span><br>
+                <input type="number" min="1" value="1" id="qty-Azithromycin">
+                <button onclick="addItem('Azithromycin', 180)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Naproxen.webp" alt="Doxycycline" class="medicine-image">
+                <div>Doxycycline</div>
+                <span class="price">Rs.220</span><br>
+                <input type="number" min="1" value="1" id="qty-Doxycycline">
+                <button onclick="addItem('Doxycycline', 220)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Loratadine.png" alt="Clindamycin" class="medicine-image">
+                <div>Clindamycin</div>
+                <span class="price">Rs.250</span><br>
+                <input type="number" min="1" value="1" id="qty-Clindamycin">
+                <button onclick="addItem('Clindamycin', 250)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Metronidazole.png" alt="Metronidazole" class="medicine-image">
+                <div>Metronidazole</div>
+                <span class="price">Rs.170</span><br>
+                <input type="number" min="1" value="1" id="qty-Metronidazole">
+                <button onclick="addItem('Metronidazole', 170)">Add</button>
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- Antidepressants Section -->
+    <div class="category">
+        <h2>Antidepressants</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="./images/Fluoxetine.jpeg" alt="Fluoxetine" class="medicine-image">
+                <div>Fluoxetine</div>
+                <span class="price">Rs.300</span><br>
+                <input type="number" min="1" value="1" id="qty-Fluoxetine">
+                <button onclick="addItem('Fluoxetine', 300)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Citalopram.jpeg" alt="Citalopram" class="medicine-image">
+                <div>Citalopram</div>
+                <span class="price">Rs.320</span><br>
+                <input type="number" min="1" value="1" id="qty-Citalopram">
+                <button onclick="addItem('Citalopram', 320)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Certizine.webp" alt="Sertraline" class="medicine-image">
+                <div>Sertraline</div>
+                <span class="price">Rs.350</span><br>
+                <input type="number" min="1" value="1" id="qty-Sertraline">
+                <button onclick="addItem('Sertraline', 350)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Loratadine.png" alt="Escitalopram">
+                <div>Escitalopram</div>
+                <span class="price">Rs.400</span><br>
+                <input type="number" min="1" value="1" id="qty-Escitalopram">
+                <button onclick="addItem('Escitalopram', 400)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Hydrochlorothiazide.webp" alt="Duloxetine" class="medicine-image">
+                <div>Duloxetine</div>
+                <span class="price">Rs.380</span><br>
+                <input type="number" min="1" value="1" id="qty-Duloxetine">
+                <button onclick="addItem('Duloxetine', 380)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Fexofenadine.jpeg" alt="Paroxetine" class="medicine-image">
+                <div>Paroxetine</div>
+                <span class="price">Rs.360</span><br>
+                <input type="number" min="1" value="1" id="qty-Paroxetine">
+                <button onclick="addItem('Paroxetine', 360)">Add</button>
+            </div>
+  
+          
+        </div>
+    </div>
+
+    <!-- Antihistamines Section -->
+    <div class="category">
+        <h2>Antihistamines</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="./images/Loratadine.png" alt="Loratadine" class="medicine-image">
+                <div>Loratadine</div>
+                <span class="price">Rs.80</span><br>
+                <input type="number" min="1" value="1" id="qty-Loratadine">
+                <button onclick="addItem('Loratadine', 80)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Certizine.webp" alt="Diphenhydramine" class="medicine-image">
+                <div>Diphenhydramine</div>
+                <span class="price">Rs.50</span><br>
+                <input type="number" min="1" value="1" id="qty-Diphenhydramine">
+                <button onclick="addItem('Diphenhydramine', 50)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Fexofenadine.jpeg" alt="Fexofenadine" class="medicine-image">
+                <div>Fexofenadine</div>
+                <span class="price">Rs.90</span><br>
+                <input type="number" min="1" value="1" id="qty-Fexofenadine">
+                <button onclick="addItem('Fexofenadine', 90)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Certizine.webp" alt="Certizine" class="medicine-image">
+                <div>Certizine</div>
+                <span class="price">Rs.70</span><br>
+                <input type="number" min="1" value="1" id="qty-Certizine">
+                <button onclick="addItem('Certizine', 70)">Add</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Antihypertensives Section -->
+    <div class="category">
+        <h2>Antihypertensives</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="./images/Amlodipine.webp" alt="Amlodipine" class="medicine-image">
+                <div>Amlodipine</div>
+                <span class="price">Rs.150</span><br>
+                <input type="number" min="1" value="1" id="qty-Amlodipine">
+                <button onclick="addItem('Amlodipine', 150)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Hydrochlorothiazide.webp" alt="Losartan" class="medicine-image">
+                <div>Losartan</div>
+                <span class="price">Rs.200</span><br>
+                <input type="number" min="1" value="1" id="qty-Losartan">
+                <button onclick="addItem('Losartan', 200)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Enalapril.webp" alt="Enalapril" class="medicine-image">
+                <div>Enalapril</div>
+                <span class="price">Rs.180</span><br>
+                <input type="number" min="1" value="1" id="qty-Enalapril">
+                <button onclick="addItem('Enalapril', 180)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Hydrochlorothiazide.webp" alt="Hydrochlorothiazide" class="medicine-image">
+                <div>Hydrochlorothiazide</div>
+                <span class="price">Rs.120</span><br>
+                <input type="number" min="1" value="1" id="qty-Hydrochlorothiazide">
+                <button onclick="addItem('Hydrochlorothiazide', 120)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Metoprolol-Image.jpg" alt="Metoprolol" class="medicine-image">
+                <div>Metoprolol</div>
+                <span class="price">Rs.160</span><br>
+                <input type="number" min="1" value="1" id="qty-Metoprolol">
+                <button onclick="addItem('Metoprolol', 160)">Add</button>
+            </div>
+            <div class="item">
+                <img src="./images/Naproxen.webp" alt="Ramipril" class="medicine-image">
+                <div>Ramipril</div>
+                <span class="price">Rs.220</span><br>
+                <input type="number" min="1" value="1" id="qty-Ramipril">
+                <button onclick="addItem('Ramipril', 220)">Add</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <h2>Cart</h2>
+    <table id="cart">
+        <thead>
+            <tr>
+                <h3><th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th></h3>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+        </tbody>
+    </table>
+    <h2><div id="total">Total: Rs.0</div></h2>
+    <button onclick="goToOrderPage()"><h3>Buy Now</h3></button>
+    <button onclick="saveToFavourites()"><h3>Add to Favourites</h3></button>
+    <button onclick="applyFavourites()"><h3>Apply Favourites</h3></button>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Info</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Compressons</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="#">Customer Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter for updates.</p>
+                <input type="email" placeholder="Your email" aria-label="Your email">
+                <button>Subscribe</button>
+                <div class="social-media">
+                    <a href="#"><img src="./images/insta (1).png" alt="Instagram Logo" class="social-logo"></a>
+                    <a href="#"><img src="./images/fb.png" alt="Facebook Logo" class="social-logo"></a>
+                    <a href="#"><img src="./images/twit.png" alt="Twitter Logo" class="social-logo"></a>
+                    <a href="#"><img src="./images/YOUTUBE.jpg" alt="YouTube Logo" class="social-logo"></a>
                 </div>
             </div>
-        </footer>
-        <script src="navbar.js"></script> <!-- Link to the JavaScript file -->
+        </div>
+    </footer>
+    <script src="navbar.js"></script> <!-- Link to the JavaScript file -->
+
+
+    
+
+
+
+
 </body>
 </html>
