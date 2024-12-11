@@ -10,6 +10,16 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+function toggle(){
+    var navbar = document.getElementById("resnav");
+    
+    // Check the current display value and toggle it
+    if (navbar.style.display === "block") {
+        navbar.style.display = "none";  // Hide the navbar
+    } else {
+        navbar.style.display = "block";  // Show the navbar
+    }
+}
 
 /*Medicine js*/ 
 let cart = [];
